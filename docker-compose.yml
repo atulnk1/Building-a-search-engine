@@ -9,7 +9,7 @@ services:
       - ./ES_DATA:/usr/share/elasticsearch/data
     environment:
       - discovery.type=single-node
-      - bootstrap.memory_lock = true
+      - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 
   hacker:
